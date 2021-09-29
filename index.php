@@ -42,8 +42,6 @@ try{
         $stmt = $pdo->prepare('UPDATE MST_NUMBERING SET CURRENT_SHIFT_NO = :shiftno, CURRENT_SHIFT_TIMES = :shifttime, UPDATE_DT = :currentdt');
         $stmt->execute(array(':shiftno' => $currentShiftNo, ':shifttime' => '1', ':currentdt' => $currentTime));
     }
-
-
 }catch (Exception $e){
     echo $e->getMessage();
 }
@@ -90,6 +88,6 @@ try{
 
 
 
-        
+
     </form>
 </body>
